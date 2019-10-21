@@ -27,57 +27,7 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
-        <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-swagger</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-nutz-mvc</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-nutz-dao</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-jetty</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-jdbc</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-quartz</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-dubbo</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-shiro</artifactId>
-        </dependency>
-       <dependency>
-            <groupId>org.nutz</groupId>
-            <artifactId>nutzboot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.196</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.44</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
              <groupId>org.slf4j</groupId>
              <artifactId>slf4j-log4j12</artifactId>

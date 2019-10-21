@@ -10,7 +10,6 @@ import io.nutz.nutzsite.module.sys.models.Task;
 import io.nutz.nutzsite.module.sys.models.User;
 import io.nutz.nutzsite.module.sys.services.*;
 import org.nutz.boot.NbApp;
-import org.nutz.conf.NutConf;
 import org.nutz.dao.Cnd;
 import org.nutz.dao.Dao;
 import org.nutz.dao.util.Daos;

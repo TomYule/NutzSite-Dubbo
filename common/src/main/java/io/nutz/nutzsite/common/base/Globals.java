@@ -1,10 +1,10 @@
 package io.nutz.nutzsite.common.base;
 
-import com.google.common.collect.Maps;
 import org.nutz.lang.Strings;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
@@ -32,7 +32,7 @@ public class Globals {
     /**
      * 保存全局属性值
      */
-    private static Map<String, String> map = Maps.newHashMap();
+    private static Map<String, String> map = new HashMap<>();
 
     /**
      * 属性文件加载对象
