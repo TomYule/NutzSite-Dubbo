@@ -8,6 +8,7 @@ MainLauncher是入口,启动即可
 
 * 必须JDK8+
 * eclipse或idea等IDE开发工具,可选
+* 安装zookeeper和dubbo-admin  或 安装docker进入 nutzsite-doubbo项目下docker 文件夹 运行docker-compose up
 
 ## 配置信息位置
 
