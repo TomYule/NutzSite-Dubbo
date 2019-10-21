@@ -11,5 +11,16 @@
 
     <artifactId>api</artifactId>
 
-
+    <dependencies>
+        <dependency>
+            <groupId>io.nutz.nutzsite</groupId>
+            <artifactId>common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.nutz.nutzsite</groupId>
+            <artifactId>service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>
