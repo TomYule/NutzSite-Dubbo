@@ -1,6 +1,7 @@
 package io.nutz.nutzsite;
 
 import org.nutz.boot.NbApp;
+import org.nutz.conf.NutConf;
 import org.nutz.dao.Dao;
 import org.nutz.dao.util.Daos;
 import org.nutz.ioc.loader.annotation.Inject;
@@ -20,6 +21,7 @@ public class DubboRpcServiceLauncher {
 
     public static void main(String[] args) throws Exception {
         NbApp nb = new NbApp().setArgs(args).setPrintProcDoc(true);
+        NutConf.USE_FASTCLASS = true;
         nb.getAppContext().setMainPackage("io.nutz.nutzsite");
         nb.run();
     }

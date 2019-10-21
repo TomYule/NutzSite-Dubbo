@@ -53,6 +53,14 @@
             <artifactId>nutzboot-starter-dubbo</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <!--nutz-plugins-slog 日志-->
+        <dependency>
+            <groupId>org.nutz</groupId>
+            <artifactId>nutz-plugins-slog</artifactId>
+            <version>1.r.68.v20190731</version>
+        </dependency>
+
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
@@ -111,6 +119,12 @@
             <groupId>org.apache.tika</groupId>
             <artifactId>tika-core</artifactId>
             <version>1.22</version>
+        </dependency>
+        <!-- 解析客户端操作系统、浏览器等 -->
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>1.19</version>
         </dependency>
 
         <dependency>
