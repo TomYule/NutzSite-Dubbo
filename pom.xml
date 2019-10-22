@@ -12,8 +12,9 @@
     </modules>
     <packaging>pom</packaging>
     <properties>
-        <nutzboot.version>2.3-SNAPSHOT</nutzboot.version>
+        <nutzboot.version>2.3.8-SNAPSHOT</nutzboot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <zkclient.version>0.11</zkclient.version>
     </properties>
     <dependencyManagement>
         <dependencies>
