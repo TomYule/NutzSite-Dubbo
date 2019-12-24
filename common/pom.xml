@@ -47,6 +47,13 @@
             <groupId>org.nutz</groupId>
             <artifactId>nutzboot-starter-thymeleaf</artifactId>
         </dependency>
+        <!--    validation 验证   -->
+        <dependency>
+            <groupId>org.nutz</groupId>
+            <artifactId>nutz-plugins-validation</artifactId>
+            <version>1.r.67</version>
+        </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

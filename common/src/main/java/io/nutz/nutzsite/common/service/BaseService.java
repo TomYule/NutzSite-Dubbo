@@ -26,6 +26,8 @@ public interface BaseService<T> {
 
     public T fetch(String name);
 
+    public T fetch(Condition cnd);
+
     public T fetchLinks(T t, String name);
 
     public List<T> fetchLinks(List<T> t, String name);

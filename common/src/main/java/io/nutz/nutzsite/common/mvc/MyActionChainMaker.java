@@ -3,9 +3,11 @@ package io.nutz.nutzsite.common.mvc;
 import io.nutz.nutzsite.common.mvc.processor.ErrorProcessor;
 import io.nutz.nutzsite.common.mvc.processor.GlobalsSettingProcessor;
 import io.nutz.nutzsite.common.mvc.processor.XssSqlFilterProcessor;
+import org.nutz.integration.shiro.NutShiroProcessor;
 import org.nutz.mvc.*;
 import org.nutz.mvc.impl.NutActionChain;
 import org.nutz.mvc.impl.processor.*;
+import org.nutz.plugins.validation.ValidationProcessor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,15 +40,16 @@ public class MyActionChainMaker implements ActionChainMaker {
         list.add(new EncodingProcessor());
         // 获取入口类的对象,从ioc或直接new
         list.add(new ModuleProcessor());
-
+        //shiro
+        list.add(new NutShiroProcessor());
         // SQL 注入过滤 XSS过滤
         list.add(new XssSqlFilterProcessor());
-
-
         // 处理@Filters
         list.add(new ActionFiltersProcessor());
         // 处理@Adaptor
         list.add(new AdaptorProcessor());
+        //必填项做判断
+        list.add(new ValidationProcessor());
         // 执行入口方法
         list.add(new MethodInvokeProcessor());
         // 对入口方法进行渲染@Ok

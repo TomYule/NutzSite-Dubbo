@@ -65,8 +65,11 @@ public class DubboRpcWebLauncher {
 
     @Inject
     @Reference
-    DeptService deptService;
+    private DeptService deptService;
 
+    @Inject
+    @Reference
+    private  TaskService taskService;
     @At({"/", "/index"})
     @Ok("re")
     public String index(HttpServletRequest req) {
@@ -136,7 +139,6 @@ public class DubboRpcWebLauncher {
      */
     private void initSysTask(Ioc ioc) {
         QuartzManager quartzManager = ioc.get(QuartzManager.class);
-        TaskService taskService = ioc.get(TaskService.class);
         quartzManager.clear();
         List<Task> taskList = taskService.query( Cnd.where("status", "=", true));
         for (Task sysTask : taskList) {
